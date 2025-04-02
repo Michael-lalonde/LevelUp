@@ -2,6 +2,15 @@ import Link from "next/link";
 export default function Stretching() {
   return (
     <div>
+        <br></br>
+        <Link
+          href="/Mobility&Cardio"
+          className="p-4 rounded-lg m-4 bg-pink-300 w-48"
+        >
+          Back to Mobility & Cardio Page
+        </Link>
+        <br></br>
+        <br></br>
         <h3 style={{ fontFamily: 'Lucida Console' }}>Lunge with Spinal Twist:</h3>
         <img src="https://cdn.medical-news.org/wp-content/uploads/2022/04/8.jpg" alt="Woman doing the exercise"></img>
         <Link
