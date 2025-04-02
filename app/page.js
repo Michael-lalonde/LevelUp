@@ -23,7 +23,7 @@ export default function HomePage() {
           Legs
         </Link>
         <Link
-          href="/mobility-cardio"
+          href="/Mobility&Cardio"
           className="flex items-center justify-center p-8 bg-yellow-500 text-white rounded-lg shadow-lg hover:bg-yellow-600 transition"
         >
           Mobility & Cardio
