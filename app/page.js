@@ -16,7 +16,7 @@ export default function HomePage() {
           Pull
         </Link>
         <Link
-          href="/legs"
+          href="/Legs"
           className="flex items-center justify-center p-8 bg-red-500 text-white rounded-lg shadow-lg hover:bg-red-600 transition"
         >
           Legs
