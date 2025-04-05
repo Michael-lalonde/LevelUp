@@ -4,8 +4,7 @@ export default function HomePage() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-900">
       <div className="grid grid-cols-4 gap-8">
-        <Link
-          href="/push"
+        <Link href="/Push"
           className="flex items-center justify-center p-8 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 transition"
         >
           Push
@@ -23,7 +22,7 @@ export default function HomePage() {
           Legs
         </Link>
         <Link
-          href="/mobility-cardio"
+          href="/Mobility&Cardio"
           className="flex items-center justify-center p-8 bg-yellow-500 text-white rounded-lg shadow-lg hover:bg-yellow-600 transition"
         >
           Mobility & Cardio

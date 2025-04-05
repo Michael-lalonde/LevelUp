@@ -1,0 +1,59 @@
+"use client"
+import { useState } from "react";  
+import ExerciseCard from "./exercise-card";
+import chestExercises from "./Chest.json";
+
+export default function ChestPage() { 
+    const [exercises, setExercises] = useState(chestExercises);
+    const [sortBy, setSortBy] = useState("name");
+
+    const sortByName = () => {
+        const sorted = [...exercises].sort((a, b) => a.name.localeCompare(b.name));
+        setExercises(sorted);
+        setSortBy("name");
+    };
+
+    const sortByDifficulty = () => {
+        const difficultyOrder = { beginner: 1, intermediate: 2, expert: 3 };
+        const sorted = [...exercises].sort((a, b) => 
+            difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]
+        );
+        setExercises(sorted);
+        setSortBy("difficulty");
+    };
+
+    return (
+        <div className="bg-gray-600">
+            <h1 className="text-2xl font-bold mb-4">Chest Exercises</h1>
+            
+            <div className="mb-6">
+                <button 
+                    className= "bg-orange-400 rounded-lg m-2 p-2"
+                    onClick={sortByName}
+                >
+                    Sort by Name
+                </button>
+                <button 
+                    className="bg-red-400 rounded-lg m-2 p-2"
+                    onClick={sortByDifficulty}
+                >
+                    Sort by Difficulty
+                </button>
+            </div>
+            
+            <div 
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {exercises.map((exercise) => (
+                    <ExerciseCard 
+                        key={exercise.name}
+                        name={exercise.name}
+                        type={exercise.type}
+                        equipment={exercise.equipment}
+                        difficulty={exercise.difficulty}
+                        instructions={exercise.instructions}
+                    />
+                ))}
+            </div>
+        </div>
+    );
+}
