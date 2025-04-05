@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Stretching() {
   return (
-    <div>
+    <div className=" bg-gray-900">
         <br></br>
         <Link
           href="/Mobility&Cardio"
@@ -27,6 +27,51 @@ export default function Stretching() {
         <br></br>
         <Link
           href="https://www.self.com/gallery/essential-stretches-slideshow"
+          className="p-4 rounded-lg m-4 bg-green-300 w-48"
+        >
+          Source of Exercise
+        </Link>
+        <br></br>
+        <br></br>
+        <button className="p-4 rounded-lg m-4 bg-blue-300 w-48">Add Exercise to Your Routine</button>
+        <br></br>
+        <br></br>
+        <h3 style={{ fontFamily: 'Lucida Console' }}>Quad Stretch</h3>
+        <img src="https://www.verywellfit.com/thmb/RBiSLF0OfSv81KjnhNefBR0zbX8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/QuadStretch_annotated-a919d0ebf9944d179c99c40d6d1831c2.jpg" alt="Woman doing the exercise"></img>
+        <Link
+          href="https://www.verywellfit.com/thmb/RBiSLF0OfSv81KjnhNefBR0zbX8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/QuadStretch_annotated-a919d0ebf9944d179c99c40d6d1831c2.jpg"
+        >
+          Image Source
+        </Link>
+        <h4 style={{ fontFamily: 'Courier New' }}>1. Stand and hold onto a wall or the back of a chair for balance if needed.</h4>
+        <h4 style={{ fontFamily: 'Courier New' }}>2. Grab the top of the left foot and bend your knee, bringing the foot toward the glutes, knee pointing straight at the floor. You should feel a stretch down the front of your leg.</h4>
+        <h4 style={{ fontFamily: 'Courier New' }}>3. Squeeze your hips forward for a deeper stretch.</h4>
+        <h4 style={{ fontFamily: 'Courier New' }}>4. Hold for 15 to 30 seconds and switch sides, repeating one to three times per leg.</h4>
+        <br></br>
+        <Link
+          href="https://www.verywellfit.com/relaxing-total-body-stretches-1231150"
+          className="p-4 rounded-lg m-4 bg-green-300 w-48"
+        >
+          Source of Exercise
+        </Link>
+        <br></br>
+        <br></br>
+        <button className="p-4 rounded-lg m-4 bg-blue-300 w-48">Add Exercise to Your Routine</button>
+        <br></br>
+        <br></br>
+        <h3 style={{ fontFamily: 'Lucida Console' }}>Chest and Shoulder Stretch</h3>
+        <img src="https://www.verywellfit.com/thmb/VUlI5ymaFd2F1ItDKDqlAX6sFVU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ChestAndShoulderStretch_annotated-010754ad93be49099e501343e6c80c19.jpg" alt="Woman doing the exercise"></img>
+        <Link
+          href="https://www.verywellfit.com/thmb/VUlI5ymaFd2F1ItDKDqlAX6sFVU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/ChestAndShoulderStretch_annotated-010754ad93be49099e501343e6c80c19.jpg"
+        >
+          Image Source
+        </Link>
+        <h4 style={{ fontFamily: 'Courier New' }}>1. Sit or stand and clasp your hands behind your back, arms straight.</h4>
+        <h4 style={{ fontFamily: 'Courier New' }}>2. Lift your hands toward the ceiling, going only as high as is comfortable. You should feel a stretch in your shoulders and chest.</h4>
+        <h4 style={{ fontFamily: 'Courier New' }}>3. Hold for 15 to 30 seconds, repeating one to three times.</h4>
+        <br></br>
+        <Link
+          href="https://www.verywellfit.com/relaxing-total-body-stretches-1231150"
           className="p-4 rounded-lg m-4 bg-green-300 w-48"
         >
           Source of Exercise
