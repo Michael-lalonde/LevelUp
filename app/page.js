@@ -12,9 +12,9 @@ export default function HomePage() {
         </Link>
       </div>
 
-      {/* Workout Grid */}
-      <div className="grid grid-cols-4 h-[calc(100vh-80px)]"> {/* Adjusted height to account for button */}
-        {/* Push - Far Left */}
+     
+      <div className="grid grid-cols-4 h-[calc(100vh-80px)]"> 
+      
         <Link 
           href="/Push"
           className="relative group overflow-hidden transition-all hover:opacity-90"
@@ -29,7 +29,6 @@ export default function HomePage() {
           </div>
         </Link>
 
-        {/* Pull - Middle Left */}
         <Link
           href="/pull"
           className="relative group overflow-hidden transition-all hover:opacity-90"
@@ -44,9 +43,9 @@ export default function HomePage() {
           </div>
         </Link>
 
-        {/* Legs - Middle Right */}
+       
         <Link
-          href="/legs"
+          href="/Legs"
           className="relative group overflow-hidden transition-all hover:opacity-90"
         >
           <img
