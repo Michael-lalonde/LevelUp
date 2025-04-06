@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Push() {
   return (
     <div className="min-h-screen bg-gray-900">
-      {/* LEVEL UP Button - Centered at top */}
+      
       <div className="flex justify-center pt-4">
         <Link 
           href="/" 
@@ -13,7 +13,7 @@ export default function Push() {
         </Link>
       </div>
 
-      {/* Page Content */}
+      
       <div className="flex flex-col items-center justify-center text-white pt-8">
         <h1 className="text-4xl font-bold mb-8">Push Exercises</h1>
         
