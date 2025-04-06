@@ -2,6 +2,7 @@
 import { useState } from "react";  
 import ExerciseCard from "./exercise-card";
 import chestExercises from "./Chest.json";
+import Link from "next/link";
 
 export default function ChestPage() { 
     const [exercises, setExercises] = useState(chestExercises);
@@ -23,6 +24,17 @@ export default function ChestPage() {
     };
 
     return (
+        <div className="min-h-screen bg-gray-900">
+       
+        <div className="flex justify-center pt-4">
+            <Link 
+                href="/" 
+                className="bg-purple-600 hover:bg-purple-700 text-white text-2xl font-bold py-4 px-8 rounded-lg shadow-lg transition duration-300 w-[15%] text-center"
+            >
+                LEVEL UP
+            </Link>
+        </div>
+
         <div className="bg-gray-600">
             <h1 className="text-2xl font-bold mb-4">Chest Exercises</h1>
             
@@ -53,6 +65,7 @@ export default function ChestPage() {
                         instructions={exercise.instructions}
                     />
                 ))}
+                </div>
             </div>
         </div>
     );
