@@ -57,8 +57,7 @@ export default function HomePage() {
             <span className="text-white text-4xl font-bold tracking-wider drop-shadow-lg">Legs</span>
           </div>
         </Link>
-
-        {/* Mobility & Cardio - Far Right */}
+        
         <Link
           href="/Mobility&Cardio"
           className="relative group overflow-hidden transition-all hover:opacity-90"
