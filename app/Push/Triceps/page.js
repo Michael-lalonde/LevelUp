@@ -24,6 +24,8 @@ export default function TricepsPage() {
     };
 
     return (
+        <div className="min-h-screen">
+        
         <div className="flex justify-center pt-4">
             <Link 
                 href="/" 
@@ -31,6 +33,7 @@ export default function TricepsPage() {
             >
                 LEVEL UP
             </Link>
+        </div>
         
             <div>
                 <div className="bg-gray-600">
