@@ -30,7 +30,7 @@ export default function HomePage() {
         </Link>
 
         <Link
-          href="/pull"
+          href="/Pull"
           className="relative group overflow-hidden transition-all hover:opacity-90"
         >  
           <img
