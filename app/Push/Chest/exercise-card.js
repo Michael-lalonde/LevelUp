@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-export default function ExerciseCard({ name, type, equipment, difficulty, instructions }) {
+export default function ExerciseCard({ name, type, equipment, difficulty, instructions, image_url }) {
     const [expanded, setExpanded] = useState(false)
 
     const getDifficultyColor = () => {
@@ -17,6 +17,8 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
             className="border-2 border-gray-300 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow cursor-pointer text-black"
             onClick={() => setExpanded(!expanded)}
         >
+           
+            
             <h2 className="text-xl font-bold mb-2">{name}</h2>
             
             <div className="flex flex-wrap gap-2 mb-3">
@@ -35,6 +37,17 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
                 <div className="mt-3">
                     <h3 className="font-semibold text-black mb-1">Instructions:</h3>
                     <p className="text-black">{instructions}</p>
+                </div>
+            )}
+
+            {image_url && (
+                <div className="mb-3 rounded-md">
+                    <img 
+                        src={image_url} 
+                        alt={name} 
+                        className="w-full h-100 object-full rounded-md"
+                    
+                    />
                 </div>
             )}
         </div>

@@ -63,6 +63,7 @@ export default function ChestPage() {
                         equipment={exercise.equipment}
                         difficulty={exercise.difficulty}
                         instructions={exercise.instructions}
+                        image_url={exercise.image_url}
                     />
                 ))}
                 </div>
