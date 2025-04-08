@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-export default function ExerciseCard({ name, type, equipment, difficulty, instructions }) {
+export default function ExerciseCard({ name, type, equipment, difficulty, instructions, image_url }) {
     const [expanded, setExpanded] = useState(false)
 
     const getDifficultyColor = () => {
@@ -32,9 +32,20 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
             </div>
 
             {expanded && (
-                <div className="mt-3">
+                <div className="md-3">
+                    
                     <h3 className="font-semibold text-black mb-1">Instructions:</h3>
                     <p className="text-black">{instructions}</p>
+                    {image_url && (
+                        <div className="mb-3 rounded-md overflow-hidden">
+                            <img 
+                                src={image_url} 
+                                alt={name} 
+                                className="w-full h-full object-cover rounded-md"
+                               
+                            />
+                        </div>
+                    )}
                 </div>
             )}
         </div>

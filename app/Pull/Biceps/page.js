@@ -1,10 +1,10 @@
 "use client"
 import { useState } from "react";  
-import ExerciseCard from "./exercise-card";
-import bicepExercises from "./biceps.json";
+import ExerciseCard from "./exercise-card"; 
+import bicepExercises from "./Biceps.json";
 import Link from "next/link";
 
-export default function BackPage() { 
+export default function BicepPage() { 
     const [exercises, setExercises] = useState(bicepExercises);
     const [sortBy, setSortBy] = useState("name");
 
@@ -63,6 +63,7 @@ export default function BackPage() {
                         equipment={exercise.equipment}
                         difficulty={exercise.difficulty}
                         instructions={exercise.instructions}
+                        image_url={exercise.image_url}
                     />
                 ))}
                 </div>

@@ -14,7 +14,7 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
 
     return (
         <div 
-            className="border-2 border-gray-300 p-4 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow cursor-pointer text-black"
+            className="border-4 border-yellow-300 p-4 rounded-lg bg-black shadow-md hover:shadow-lg transition-shadow cursor-pointer text-white"
             onClick={() => setExpanded(!expanded)}
         >
             <h2 className="text-xl font-bold mb-2">{name}</h2>
@@ -34,15 +34,17 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
             {expanded && (
                 <div className="md-3">
                     
-                    <h3 className="font-semibold text-black mb-1">Instructions:</h3>
-                    <p className="text-black">{instructions}</p>
+                    <h3 className="font-semibold text-white mb-1">Instructions:</h3>
+                    <p className="text-white">{instructions}</p>
                     {image_url && (
                         <div className="mb-3 rounded-md overflow-hidden">
                             <img 
                                 src={image_url} 
                                 alt={name} 
                                 className="w-full h-full object-cover rounded-md"
-                            
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                }}
                             />
                         </div>
                     )}
