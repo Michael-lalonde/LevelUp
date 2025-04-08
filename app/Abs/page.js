@@ -1,62 +1,73 @@
+"use client"
+import { useState } from "react";  
+import ExerciseCard from "./exercise-card";
+import absExercises from "./Abs.json";
 import Link from "next/link";
-export default function Abs() {
+
+export default function AbsPage() { 
+    const [exercises, setExercises] = useState(absExercises);
+    const [sortBy, setSortBy] = useState("name");
+
+    const sortByName = () => {
+        const sorted = [...exercises].sort((a, b) => a.name.localeCompare(b.name));
+        setExercises(sorted);
+        setSortBy("name");
+    };
+
+    const sortByDifficulty = () => {
+        const difficultyOrder = { beginner: 1, intermediate: 2, expert: 3 };
+        const sorted = [...exercises].sort((a, b) => 
+            difficultyOrder[a.difficulty] - difficultyOrder[b.difficulty]
+        );
+        setExercises(sorted);
+        setSortBy("difficulty");
+    };
+
     return (
-        <div className=" bg-gray-900">
-        <br></br>
-        <Link
-          href="/Mobility&Cardio"
-          className="p-4 rounded-lg m-4 bg-pink-300 w-48"
-        >
-          Back to Mobility & Cardio Page
-        </Link>
-        <br></br>
-        <br></br>
-        <h3 style={{ fontFamily: 'Lucida Console' }}>Lying Leg Raise</h3>
-        <img src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/lying-leg-raises.gif?resize=600%2C600&ssl=1" alt="Gif of woman doing the exercise"></img>
-        <Link
-          href="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/10/lying-leg-raises.gif?resize=600%2C600&ssl=1"
-        >
-          Image Source
-        </Link>
-        <h4 style={{ fontFamily: 'Courier New' }}>1. Lie down with your back on the floor, and your arms at your sides.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>2. With straight legs, lift your legs until they are pointing straight up.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>3. Lower your legs again, with control.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>4. Repeat the movement for your desired number of repetitions.</h4>
-        <button className="p-4 rounded-lg m-4 bg-blue-300 w-48">Add Exercise to Your Routine</button>
-        <br></br>
-        <br></br>
-        <h3 style={{ fontFamily: 'Lucida Console' }}>Crunch</h3>
-        <img src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Crunch.gif?resize=600%2C600&ssl=1" alt="Gif of a man doing the exercise"></img>
-        <Link
-          href="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2023/01/Crunch.gif?resize=600%2C600&ssl=1"
-        >
-          Image Source
-        </Link>
-        <h4 style={{ fontFamily: 'Courier New' }}>1. Lie on your back with your hands in front of your chest and your knees bent to about 90 degrees.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>2. Lift your shoulder blades off the floor by contracting your abs and bending forward.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>3. Bend as far forward as possible while keeping your low back in contact with the floor, and then return to the starting position.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>4. Repeat the movement for your desired number of repetitions.</h4>
-        <button className="p-4 rounded-lg m-4 bg-blue-300 w-48">Add Exercise to Your Routine</button>
-        <br></br>
-        <br></br>
-        <h3 style={{ fontFamily: 'Lucida Console' }}>Plank</h3>
-        <img src="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Plank.jpg?resize=1024%2C1024&ssl=1" alt="Picture of a man doing the exercise"></img>
-        <Link
-          href="https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Plank.jpg?resize=1024%2C1024&ssl=1"
-        >
-          Image Source
-        </Link>
-        <h4 style={{ fontFamily: 'Courier New' }}>1. Stand on your elbows and feet.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>2. Brace your abs and try to form and hold a straight line from your head to feet.</h4>
-        <h4 style={{ fontFamily: 'Courier New' }}>3. Hold the position for the intended length of time or as long as you can.</h4>
-        <button className="p-4 rounded-lg m-4 bg-blue-300 w-48">Add Exercise to Your Routine</button>
-        <br></br>
-        <Link
-          href="https://www.strengthlog.com/ab-exercises/"
-        >
-          Click Here for Source of Exercises
-        </Link>
+        <div className="min-h-screen bg-gray-900">
+       
+        <div className="flex justify-center pt-4">
+            <Link 
+                href="/" 
+                className="bg-purple-600 hover:bg-purple-700 text-white text-2xl font-bold py-4 px-8 rounded-lg shadow-lg transition duration-300 w-[15%] text-center"
+            >
+                LEVEL UP
+            </Link>
+        </div>
+
+        <div className="bg-gray-600">
+            <h1 className="text-2xl font-bold mb-4">Abs Exercises</h1>
+            
+            <div className="mb-6">
+                <button 
+                    className= "bg-yellow-400 rounded-lg m-2 p-2"
+                    onClick={sortByName}
+                >
+                    Sort by Name
+                </button>
+                <button 
+                    className="bg-green-400 rounded-lg m-2 p-2"
+                    onClick={sortByDifficulty}
+                >
+                    Sort by Difficulty
+                </button>
+            </div>
+            
+            <div 
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {exercises.map((exercise) => (
+                    <ExerciseCard 
+                        key={exercise.name}
+                        name={exercise.name}
+                        type={exercise.type}
+                        equipment={exercise.equipment}
+                        difficulty={exercise.difficulty}
+                        instructions={exercise.instructions}
+                        image_url={exercise.image_url}
+                    />
+                ))}
+                </div>
+            </div>
         </div>
     );
-  }
-//https://www.strengthlog.com/ab-exercises/
+}
