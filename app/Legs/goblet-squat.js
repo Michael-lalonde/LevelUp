@@ -18,6 +18,7 @@ export default function GobletSquat(){
           Push up through your heels back to the starting position.
           </li>
         </ol>
+        <img src="https://cdn.shopify.com/s/files/1/0268/4682/2569/files/goblet_squat_with_kettlebells_600x600.webp?v=1725739147"/>
         </div>
     );
 }

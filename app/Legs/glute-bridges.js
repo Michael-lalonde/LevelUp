@@ -18,6 +18,7 @@ export default function GluteBridges(){
             Pause at the top, then slowly release back to the starting position.
           </li>
         </ol>
+        <img src="https://images.squarespace-cdn.com/content/v1/5ffcea9416aee143500ea103/1638422430370-4HKO5XUY96AQ4ID418WS/Glute%2BBridges.jpeg"/>
         </div>
     );
 }

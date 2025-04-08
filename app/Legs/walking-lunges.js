@@ -21,6 +21,7 @@ export default function WalkingLunges(){
             Continue forward with the left leg.
           </li>
         </ol>
+        <img src="https://trainingstation.co.uk/cdn/shop/articles/Lunges-movment_d958998d-2a9f-430e-bdea-06f1e2bcc835_900x.webp?v=1741687877"/>
         </div>
     );
 }
