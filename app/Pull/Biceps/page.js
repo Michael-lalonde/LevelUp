@@ -62,7 +62,7 @@ export default function BackPage() {
                         type={exercise.type}
                         equipment={exercise.equipment}
                         difficulty={exercise.difficulty}
-                        instructions={exercise.instructions}
+                        image_url={exercise.image_url}
                     />
                 ))}
                 </div>
