@@ -50,17 +50,6 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
                     )}
                 </div>
             )}
-
-           
-            <button 
-                className="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
-                onClick={(e) => {
-                    e.stopPropagation(); 
-                    onAddWorkout(name);
-                }}
-            >
-                Add Workout
-            </button>
         </div>
     );
 }
