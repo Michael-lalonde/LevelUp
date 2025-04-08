@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from 'react';
 import ExerciseCard from "./exercise-card.js";
-import Shoulders from "./Shoulders.json";
+import Shoulders from "./shoulders.json";
 
 export default function ShouldersPage() {
     const [exercises, setExercises] = useState(Shoulders);

@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";  
 import ExerciseCard from "./exercise-card"; 
-import bicepExercises from "./Biceps.json";
+import bicepExercises from "./biceps.json";
 import Link from "next/link";
 
 export default function BicepPage() { 

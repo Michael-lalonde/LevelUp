@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import ExerciseCard from "./exercise-card.js";
-import triceps from "./Triceps.json";
+import triceps from "./triceps.json";
 
 export default function TricepsPage() {
     const [exercises, setExercises] = useState(triceps);
