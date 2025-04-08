@@ -18,7 +18,7 @@ export default function MobilityCardio() {
       </Link>
       <Link
           href="/Cardio"
-          className="p-4 rounded-lg m-4 bg-yellow-300 w-48"
+          className="p-4 rounded-lg m-4 bg-yellow-500 w-48"
         >
           Cardio Exercises
       </Link>
