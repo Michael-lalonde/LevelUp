@@ -42,9 +42,7 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
                                 src={image_url} 
                                 alt={name} 
                                 className="w-full h-full object-cover rounded-md"
-                                onError={(e) => {
-                                    e.target.style.display = 'none';
-                                }}
+                               
                             />
                         </div>
                     )}
