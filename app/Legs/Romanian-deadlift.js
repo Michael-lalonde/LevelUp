@@ -18,6 +18,7 @@ export default function RomanianDeadlift(){
           Pause, then drive your hips forward to stand up, allowing your glutes to power the movement.
           </li>
         </ol>
+        <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-romanian-deadlift.jpg"/>
         </div>
     );
 }

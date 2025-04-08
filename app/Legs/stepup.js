@@ -18,6 +18,7 @@ export default function StepUp(){
           Step down with your left foot to return to the starting position.
           </li>
         </ol>
+        <img src="https://liftmanual.com/wp-content/uploads/2023/04/transverse-step-up.jpg"/>
         </div>
     );
 }

@@ -21,6 +21,7 @@ export default function HipThrust(){
           Push up through your heels until your thighs are parallel to the floor again. Squeeze your glutes at the top, then return to the starting position.
           </li>
         </ol>
+        <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-hip-thrust.jpg"/>
         </div>
     );
 }

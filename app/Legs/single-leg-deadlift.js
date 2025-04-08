@@ -21,6 +21,6 @@ export default function SingleLegDeadlift(){
           Pause, then return to the starting position and repeat. Complete the desired number of reps on each leg.
           </li>
         </ol>
-        </div>
+        <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-single-stiff-leg-deadlift.jpg"/>        </div>
     );
 }

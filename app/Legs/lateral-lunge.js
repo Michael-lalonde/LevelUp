@@ -18,6 +18,7 @@ export default function LateralLunges(){
           Push back up to the starting position and repeat. Complete the desired number of reps on each side.
           </li>
         </ol>
+        <img src="https://kinxlearning.com/cdn/shop/files/34481101-Dumbbell-Side-Lunge-_VERSION-3__medium_3b87c4a5-7228-4bd1-9ab2-b13bb8b58515_1024x.png?v=1690734079"/>
         </div>
     );
 }

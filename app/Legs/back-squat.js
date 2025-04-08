@@ -18,6 +18,7 @@ export default function BackSquat() {
           Lower until your thighs are parallel to the ground — or as far down as your mobility allows — then push back up to the starting position.
         </li>
       </ol>
+      <img src="https://sportivetricksstorage.blob.core.windows.net/images/articles/powerlifting/technique/squat-muscles/activation-patterns/1-muscles-worked-back-squat.webp"/>
     </div>
   );
 }

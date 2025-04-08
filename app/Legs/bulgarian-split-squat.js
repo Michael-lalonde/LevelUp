@@ -18,6 +18,7 @@ export default function BulgarianSplitSquat(){
           Push up through your left foot to return to a standing position.
           </li>
         </ol>
+        <img src="https://www.burnthefatinnercircle.com/members/images/2003b.png?cb=20250102035912"/>
         </div>
     );
 }
