@@ -1,5 +1,6 @@
 [
     {
+      "id": "43",
       "name": "Incline Hammer Curls",
       "type": "strength",
       "muscle": "biceps",
@@ -9,6 +10,7 @@
       "image_url": "https://cdn.jefit.com/assets/img/exercises/gifs/264.gif"
     },
     {
+      "id": "44",
       "name": "Wide-grip barbell curl",
       "type": "strength",
       "muscle": "biceps",
@@ -18,6 +20,7 @@
       "image_url":"https://barbend.com/wp-content/uploads/2024/01/barbell-curl-barbend-movement-gif-masters.gif"
     },
     {
+      "id": "45",
       "name": "EZ-bar spider curl",
       "type": "strength",
       "muscle": "biceps",
@@ -27,6 +30,7 @@
       "image_url":"https://www.garagegymreviews.com/wp-content/uploads/EZ-bar-spider-curl.gif"
     },
     {
+      "id": "46",
       "name": "Hammer Curls",
       "type": "strength",
       "muscle": "biceps",
@@ -36,6 +40,7 @@
       "image_url":"https://www.garagegymreviews.com/wp-content/uploads/alternating-dumbbell-hammer-curl.gif"
     },
     {
+      "id": "47",
       "name": "EZ-Bar Curl",
       "type": "strength",
       "muscle": "biceps",
@@ -45,6 +50,7 @@
       "image_url":"https://newlife.com.cy/wp-content/uploads/2019/11/22381301-EZ-Barbell-Curl-female_Upper-Arms_360.gif"
     },
     {
+      "id": "48",
       "name": "Zottman Curl",
       "type": "strength",
       "muscle": "biceps",
@@ -55,6 +61,7 @@
 
     },
     {
+      "id": "49",
       "name": "Biceps curl to shoulder press",
       "type": "strength",
       "muscle": "biceps",
@@ -64,6 +71,7 @@
       "image_url":"https://ginasiovirtual.com/wp-content/uploads/2021/06/curl-de-bicep-com-press-de-ombros.webp"
     },
     {
+      "id": "50",
       "name": "Barbell Curl",
       "type": "strength",
       "muscle": "biceps",
@@ -73,6 +81,7 @@
       "image_url":"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/12/Barbell-biceps-curl.gif?resize=600%2C600&ssl=1"
     },
     {
+      "id": "51",
       "name": "Concentration curl",
       "type": "strength",
       "muscle": "biceps",
@@ -82,6 +91,7 @@
       "image_url":"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Concentration-curl.gif?resize=600%2C600&ssl=1"
     },
     {
+      "id": "52",
       "name": "Flexor Incline Dumbbell Curls",
       "type": "strength",
       "muscle": "biceps",

@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This is where you can find all the image links as well. 
 
+bulk of source code for json files: https://www.api-ninjas.com/api/exercises 
+
 
 Chest img links
 Dumbbell Benchpress: https://media1.popsugar-assets.com/files/thumbor/-OqqOXqmrTvY4M-Ilh0vhbZOWCc=/fit-in/1584x892/top/filters:format_auto():upscale()/2018/07/13/600/n/1922729/tmp_Q1VwBd_62b1a8a6f268bc9f_IMB_7LY27h.GIF

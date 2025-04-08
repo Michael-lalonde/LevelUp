@@ -1,16 +1,17 @@
 "use client"
 import { useState } from "react";
-export default function ExerciseCard({ name, type, equipment, difficulty, instructions, image_url }) {
-    const [expanded, setExpanded] = useState(false)
 
+export default function ExerciseCard({ name, type, equipment, difficulty, instructions, image_url, onAddWorkout }) {
+    const [expanded, setExpanded] = useState(false);
+    
     const getDifficultyColor = () => {
         switch (difficulty) {
-            case 'beginner': return 'bg-green-100 text-green-800'
-            case 'intermediate': return 'bg-yellow-100 text-yellow-800'
-            case 'expert': return 'bg-red-100 text-red-800'
-            default: return 
+            case 'beginner': return 'bg-green-100 text-green-800';
+            case 'intermediate': return 'bg-yellow-100 text-yellow-800';
+            case 'expert': return 'bg-red-100 text-red-800';
+            default: return;
         }
-    }
+    };
 
     return (
         <div 
@@ -33,7 +34,6 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
 
             {expanded && (
                 <div className="md-3">
-                    
                     <h3 className="font-semibold text-black mb-1">Instructions:</h3>
                     <p className="text-black">{instructions}</p>
                     {image_url && (
@@ -50,6 +50,17 @@ export default function ExerciseCard({ name, type, equipment, difficulty, instru
                     )}
                 </div>
             )}
+
+           
+            <button 
+                className="mt-3 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                onClick={(e) => {
+                    e.stopPropagation(); 
+                    onAddWorkout(name);
+                }}
+            >
+                Add Workout
+            </button>
         </div>
-    )
+    );
 }

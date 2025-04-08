@@ -1,5 +1,6 @@
 [
     {
+      "id": "1",
       "name": "Dumbbell Bench Press",
       "type": "strength",
       "muscle": "chest",
@@ -9,6 +10,7 @@
       "image_url": "https://media1.popsugar-assets.com/files/thumbor/-OqqOXqmrTvY4M-Ilh0vhbZOWCc=/fit-in/1584x892/top/filters:format_auto():upscale()/2018/07/13/600/n/1922729/tmp_Q1VwBd_62b1a8a6f268bc9f_IMB_7LY27h.GIF"
     },
     {
+      "id": "2",
       "name": "Pushups",
       "type": "strength",
       "muscle": "chest",
@@ -18,6 +20,7 @@
       "image_url": "https://brand.assets.adidas.com/capi/enUS/Images/pushup-workouts-body-image-01_221-830752.gif"
     },
     {
+      "id": "3",
       "name": "Close-grip bench press",
       "type": "strength",
       "muscle": "chest",
@@ -27,6 +30,7 @@
       "image_url":"https://hips.hearstapps.com/hmg-prod/images/workouts/2017/10/narrowgripbenchpress-1509458862.gif?resize=800:*"
     },
     {
+      "id": "5",
       "name": "Dumbbell Flyes",
       "type": "strength",
       "muscle": "chest",
@@ -36,6 +40,7 @@
       "image_url": "https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2020/03/Dumbbell-Chest-Fly.gif?resize=600%2C600&ssl=1"
     },
     {
+      "id": "6",
       "name": "Incline dumbbell bench press",
       "type": "strength",
       "muscle": "chest",
@@ -45,6 +50,7 @@
       "image_url": "https://i.pinimg.com/originals/be/94/3f/be943f55c4a35f5599824db11168d686.gif"
     },
     {
+      "id": "7",
       "name": "Low-cable cross-over",
       "type": "strength",
       "muscle": "chest",
@@ -54,6 +60,7 @@
       "image_url": "https://assets.myworkouts.io/exercises-media/KMeB3sKioHE6F43je/low_cable_crossover_female_v3_webp_capoff.webp"
     },
     {
+      "id": "8",
       "name": "Barbell Bench Press - Medium Grip",
       "type": "strength",
       "muscle": "chest",
@@ -63,6 +70,7 @@
       "image_url": "https://barbend.com/wp-content/uploads/2022/03/barbell-bench-press-barbend-movement-gif-masters.gif"
     },
     {
+      "id": "9",
       "name": "Chest dip",
       "type": "strength",
       "muscle": "chest",
@@ -72,6 +80,7 @@
       "image_url": "https://i.pinimg.com/originals/19/bb/46/19bb463e4edc3efec49e6ffe8ac45e38.gif"
     },
     {
+      "id": "10",
       "name": "Decline Dumbbell Twist Flyes",
       "type": "strength",
       "muscle": "chest",
@@ -81,6 +90,7 @@
       "image_url": "https://framerusercontent.com/images/u7o22PYIaCeCchedjRvbCj449s.gif"
     },
     {
+      "id": "11",
       "name": "Bodyweight Flyes",
       "type": "strength",
       "muscle": "chest",
