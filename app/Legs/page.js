@@ -14,7 +14,6 @@ import WalkingLunges from "./walking-lunges";
 
 export default function Legs() {
   return (
-<<<<<<< HEAD
     <div className="min-h-screen bg-gray-900 text-white">
       
       {/* Top Navigation Button */}
@@ -27,7 +26,7 @@ export default function Legs() {
         </Link>
       </div>
 
-      {/*Heading and Links */}
+      {/* Heading and Links */}
       <div className="flex flex-col items-center justify-center pt-8">
         <h1 className="text-4xl font-bold mb-8">Leg Exercises</h1>
         
@@ -58,22 +57,6 @@ export default function Legs() {
         <div id="stepup"><StepUp /></div>
         <div id="walking-lunges"><WalkingLunges /></div>
       </div>
-=======
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-xl shadow-md mt-10">
-    <h1 className="text-3xl font-bold text-gray-800 mb-6">
-      Exercises For Leg Day 
-    </h1>
-    <BackSquat/>
-    <BulgarianSplitSquat/>
-    <GluteBridges/>
-    <GobletSquat/>
-    <HipThrust/>
-    <LateralLunges/>
-    <RomanianDeadlift/>
-    <SingleLegDeadlift/>
-    <StepUp/>
-    <WalkingLunges/>
->>>>>>> origin/main
     </div>
   );
 }
